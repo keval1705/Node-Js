@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>student register form</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Student Register From</h2>
+  <form action="" method="POST" enctype="multipart/form-data">
+    <div class="form-group">
+      <label for="First_name">First_name:</label>
+      <input type="text" class="form-control" id="" placeholder="First_name" name="first_name">
+    </div>
+    <div class="form-group">
+      <label for="Last_name">Last_name:</label>
+      <input type="text" class="form-control" id="email" placeholder="Last_name" name="last_name">
+    </div>
+    <div class="form-group">
+      <label for="email">Infomations:</label>
+      <textarea name="infomations" class="form-control" id="" cols="5" rows="5"></textarea>
+    </div>
+    <div class="form-group">
+      <label for="pwd">Gender:</label>
+      <input type="radio" name="gender" value="male">male
+      <input type="radio" name="gender" value="female">female
+    </div>
+    <div class="form-group">
+      <label for="email">Birth_Date:</label>
+      <input type="date" class="form-control" name="birth_date">
+    </div>
+    <div class="form-group">
+      <label for="contact_no">contact_no:</label>
+      <input type="number" class="form-control" name="mo_no" maxlength="10">
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" name="email" placeholder="" >
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" name="remember"> Remember me</label>
+    </div>
+    <button type="submit" class="btn btn-primary btn-lg">Next</button>
+  </form>
+</div>
+
+</body>
+</html>

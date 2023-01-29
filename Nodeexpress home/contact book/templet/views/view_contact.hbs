@@ -1,0 +1,62 @@
+
+{{>header}}
+<div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+	<!-- page content -->
+	<div class="right_col" role="main">
+		<div class="">
+			<div class="page-title">
+				<div class="title_left">
+					<h3>Form Elements</h3>
+				</div>
+
+				<div class="title_right">
+					<div class="col-md-5 col-sm-5  form-group pull-right top_search">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Search for...">
+							<span class="input-group-btn">
+								<button class="btn btn-default" type="button">Go!</button>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+									<div class="x_content">
+										<table class="table table-striped">
+											<thead>
+												<tr>
+													<th>index</th>
+													<th>name</th>
+													<th>mo_no</th>
+													<th>Action</th>
+												</tr>
+											</thead>
+											<tbody>
+												{{#user}}
+													<tr>
+                                                        <td>{{inc @key}}</td>
+                                                        <td>{{name}}</td>
+                                                        <td>{{mo_no}}</td>
+                                                        <td>
+															<a href="edit_contact?uid={{_id}}" class="btn btn-primary">Edit</a>
+															<a href="delete_contact?did={{_id}}"class="btn btn-danger">Delete</a>
+														</td>
+													</tr>
+													{{/user}}
+											</tbody>
+										</table>
+											{{#times total_page}}
+												<a href="view_contact?page_no={{this}}">{{this}}</a>
+											{{/times}}
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    {{>footer}}
+	<!-- /page content -->
